@@ -1,0 +1,150 @@
+/******************************************************************
+
+Stylesheet: 1080px以上で適用
+
+******************************************************************/
+
+$cWhite: #fff;
+  $cBlack: #000;
+  
+  body{
+    margin:0;
+    font-family: "游ゴシック",YuGothic,"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","メイリオ",Meiryo,"ＭＳ Ｐゴシック","MS PGothic",sans-serif;
+  }
+  .tablet__header{
+    display: none;
+  }
+  .header{
+    max-width: 95%;
+    margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      &__img{
+        // height: 100px;
+        & > img{
+          height: 20px;
+          width: auto;
+        }
+    }
+    &__ul{
+      text-align: center;
+      display: flex;
+      justify-content: space-between;
+      &__item{
+      display: block;
+      font-weight: 700;
+      text-align: center;
+      width: 120px;
+      font-size: 14px;
+      &:last-child{
+        background-color: #f79214;
+        border-radius: 30px;
+        width: 150px;
+        padding: 10px;
+        &>a{
+          color: $cWhite;
+        }
+      }
+      &__link{
+        cursor:pointer;
+        & .item_sub{
+          font-size: 10px;
+        }
+      }
+      }
+      & li{
+        list-style: none;
+        & > a{
+          text-decoration: none;
+          color: $cBlack;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
+
+  .main{
+  &__content{
+    width: 55%;
+    padding-right: 10%;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    margin-top: 0;
+    }
+  &__message{
+    font-size: 20px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 54px;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  &__images {  
+  & > img{
+    vertical-align: middle;
+  }
+  }
+  &__btn{
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+  & .counseling{
+    font-size: 16px;
+    color:$cWhite;
+    height:40px;
+    line-height:40px;
+    width: 60%;
+    background-color: #f79214;
+    border-radius: 40px;
+    margin-right:10px;
+}
+  & .flyers{
+    font-size: 16px;
+    color:$cBlack;
+    height:40px;
+    line-height:40px;
+    width: 40%;
+    background-color: $cWhite;
+    border-radius: 40px;
+    border:1px solid rgba(0, 0, 0, .1);
+  }
+  }
+  &__caption {
+    width: 100vw;
+    margin: 0 calc(50% - 50vw);
+  }
+}
+  
+  .about{
+    background-color: #f79214;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    &__container{
+      max-width: 90%;
+      margin:0 auto;
+      padding: 44px 0;
+      color:$cWhite;
+      display: flex;
+      justify-content: space-between;
+    }
+  &__video{
+    width: 50%;
+  }
+  &__content{
+    width: 48%;
+    margin-left: 25px;
+    margin-top: 20px;
+    & > h2{
+      font-size: 38px;
+      line-height: 10px;
+      letter-spacing: none;
+    }
+    & > a {
+      text-decoration: none;
+      color: $cWhite;
+      font-size: 18px;
+    }
+  }
+  }

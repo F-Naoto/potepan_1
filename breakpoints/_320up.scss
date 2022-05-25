@@ -1,0 +1,165 @@
+/******************************************************************
+
+Stylesheet: 320px以上で適用
+
+******************************************************************/
+$cWhite: #fff;
+$cBlack: #000;
+
+body{
+  margin:0;
+  font-family: "游ゴシック",YuGothic,"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","メイリオ",Meiryo,"ＭＳ Ｐゴシック","MS PGothic",sans-serif;
+}
+
+.global_container{
+  max-width:100%;
+}
+
+.header{
+  display: none;
+}
+
+.tablet__header{
+  height:130px !important;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+  background-color: $cWhite;
+  &__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+    margin:25px auto;
+  }
+  & > img{
+    display: block;
+    width: 150px;
+  }
+  &__lines {
+    cursor: pointer;
+    width: 70px;
+  & > span {
+    background-color: $cBlack;
+    width: 100%;
+    height: 7px;
+    display: block;
+    margin-bottom: 18px;
+    &:last-child {
+        margin-bottom: 0;
+    }
+   }
+  }
+}
+
+
+.main{
+  background-image: url("https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/home/first-view/top-hero-sp.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top;
+  height: 150%;
+  display: flex;
+  flex-direction: column;
+  z-index: 50;
+  margin-bottom: 60px;
+  &__content{
+    margin-top:60%;
+  }
+&__message{
+  font-size: 32px;
+  letter-spacing: 3px;
+  margin:0 auto;
+  text-align: center;
+  bottom: 25%;
+  width:95%;
+}
+&__images {
+  text-align: center;
+  width: 100%;
+& > img{
+  vertical-align: middle;
+  }
+  & .main_img1{
+    width:20%;
+  }
+  & .main_img2{
+    width:35%;
+  }
+  & .main_img3{
+    width:20%;
+  }
+}
+&__btn{
+  margin:30px auto;
+  text-align:center;
+  max-width: 80%;
+  font-weight: 600;
+& .counseling{
+  background-color: #f79214;
+    border: none;
+    padding: 65px 0px;
+    border-radius: 90px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 45px;
+    font-weight: 600;
+    height: 64px;
+    text-decoration: none;
+}
+& .flyers{
+ display: none;
+}
+}
+&__caption{
+  padding-top:80px;
+  color: #a2a2a4;
+  font-size: 30px;
+  margin: 0 auto;
+  max-width: 80%;
+}
+}
+
+
+
+.about{
+  background-color: #f79214;
+  padding-top: 10px;
+  padding-bottom: 10px;  
+  &__container{
+    width:90%;
+    margin:0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    padding: 44px 0;
+    color:$cWhite;
+  }
+&__video{
+  margin-bottom:16px;
+  max-width:100%;
+  display: block;
+  margin:10px auto;
+  
+}
+&__content{
+  max-width: 100%;
+  & > h2{
+    font-size: 38px;
+    line-height: 10px;
+    letter-spacing: 5px;
+  }
+  & > p {
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 2px;
+    font-weight: 600;
+  }
+  & > a {
+    text-decoration: none;
+    color: $cWhite;
+    font-size: 24px;
+  }
+}
+}

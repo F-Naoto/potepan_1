@@ -1,0 +1,113 @@
+/******************************************************************
+
+Stylesheet: 768px以上で適用
+
+******************************************************************/
+
+$cWhite: #fff;
+$cBlack: #000;
+
+.tablet__header{
+  height:20%;
+}
+
+.main{
+    background-image: url("https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/home/first-view/top-hero.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+  &__content{
+    margin-top:20%;
+    width:85%;
+  }
+  &__message{
+    font-size: 24px;
+    // margin:0 auto;
+    // text-align: center;
+    // bottom: 25%;
+}
+&__btn{
+  display: flex;
+  justify-content: space-between;
+  margin:30px auto;
+  text-align:center;
+  max-width: 80%;
+  font-weight: 500;
+& .counseling{
+  background-color: #f79214;
+    text-align:center;
+    height:60px;
+    line-height:60px;
+    border: none;
+    padding: 10px 10px;
+    width: 60%;
+    border-radius: 40px;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 18px;
+}
+& .flyers{
+  text-align:center;
+  height:60px;
+  line-height:60px;
+  display: block;
+  color:$cBlack;
+  padding: 10px 10px;
+  width: 30%;
+  background-color: $cWhite;
+  border-radius: 40px;
+  border:1px solid rgba(0, 0, 0, .1);
+  font-size: 18px;
+}
+}
+&__caption{
+  color: #a2a2a4;
+  font-size: 12px;
+  margin-left: 10%;
+}
+}
+
+
+
+.about{
+  background-color: #f79214;
+  padding-top: 10px;
+  padding-bottom: 10px;  
+  &__container{
+    width:60%;
+    margin:0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    padding: 44px 0;
+    color:$cWhite;
+  }
+&__video{
+  margin-bottom:16px;
+  max-width:100%;
+  display: block;
+  margin:10px auto;
+  
+}
+&__content{
+  max-width: 100%;
+  & > h2{
+    font-size: 38px;
+    line-height: 10px;
+    letter-spacing: 5px;
+  }
+  & > p {
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 2px;
+    font-weight: 600;
+  }
+  & > a {
+    text-decoration: none;
+    color: $cWhite;
+    font-size: 24px;
+  }
+}
+}
