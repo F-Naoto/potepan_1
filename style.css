@@ -16,7 +16,7 @@ Stylesheet: 320px以上で適用
     display: none;
   }
   .tablet__header {
-    height: 130px !important;
+    height: 130px;
     position: fixed;
     top: 0;
     z-index: 100;
@@ -68,7 +68,7 @@ Stylesheet: 320px以上で適用
         -ms-flex-direction: column;
             flex-direction: column;
     z-index: 50;
-    margin-bottom: 60px;
+    padding-bottom: 60px;
   }
   .main__content {
     margin-top: 60%;
@@ -148,7 +148,7 @@ Stylesheet: 320px以上で適用
   }
   .about__video {
     margin-bottom: 16px;
-    max-width: 100%;
+    width: 100%;
     display: block;
     margin: 10px auto;
   }
@@ -156,15 +156,12 @@ Stylesheet: 320px以上で適用
     max-width: 100%;
   }
   .about__content > h2 {
-    font-size: 38px;
+    font-size: 64px;
     line-height: 10px;
-    letter-spacing: 5px;
   }
   .about__content > p {
-    font-size: 18px;
-    line-height: 30px;
-    letter-spacing: 2px;
-    font-weight: 600;
+    font-size: 26px;
+    font-weight: 500;
   }
   .about__content > a {
     text-decoration: none;
@@ -180,7 +177,7 @@ Stylesheet: 768px以上で適用
 
 ******************************************************************/
   .tablet__header {
-    height: 20%;
+    height: 130px;
   }
   .main {
     background-image: url("https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/home/first-view/top-hero.jpg");
@@ -294,13 +291,93 @@ Stylesheet: 768px以上で適用
 Stylesheet: 1024px以上で適用
 
 ******************************************************************/
-  .about__container {
+  .main {
+    padding-bottom: 60px;
+  }
+  .main__content {
+    width: 55%;
+    padding-right: 10%;
+    margin-top: 0;
+  }
+  .main__message {
+    font-size: 20px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 54px;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  .main__images > img {
+    vertical-align: middle;
+  }
+  .main__btn {
+    text-align: center;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+  }
+  .main__btn .counseling {
+    font-weight: 500;
+    font-size: 16px;
+    color: #fff;
+    height: 40px;
+    line-height: 40px;
+    width: 60%;
+    background-color: #f79214;
+    border-radius: 40px;
+    margin-right: 10px;
+  }
+  .main__btn .flyers {
+    font-weight: 600;
+    font-size: 16px;
+    color: #000;
+    height: 40px;
+    line-height: 40px;
+    width: 40%;
+    background-color: #fff;
+    border-radius: 40px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  .main__caption {
+    width: 90%;
+    margin-left: 5%;
+    padding-top: 0;
+  }
+  .about__container {
+    width: 90%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 10px 0px;
+  }
+  .about__container__video {
+    -ms-flex-preferred-size: 48%;
+        flex-basis: 48%;
+  }
+  .about__content {
+    -ms-flex-preferred-size: 47%;
+        flex-basis: 47%;
+  }
+  .about__content > h2 {
+    font-size: 34px;
+  }
+  .about__content > p {
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0px;
+  }
+  .about__content > a {
+    font-size: 18px;
   }
 }
 
@@ -372,90 +449,6 @@ Stylesheet: 1080px以上で適用
     text-decoration: none;
     color: #000;
     font-size: 14px;
-  }
-  .main__content {
-    width: 55%;
-    padding-right: 10%;
-    margin-top: 0;
-  }
-  .main__message {
-    font-size: 20px;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 54px;
-    margin-bottom: 15px;
-    text-align: center;
-  }
-  .main__images > img {
-    vertical-align: middle;
-  }
-  .main__btn {
-    text-align: center;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  .main__btn .counseling {
-    font-size: 16px;
-    color: #fff;
-    height: 40px;
-    line-height: 40px;
-    width: 60%;
-    background-color: #f79214;
-    border-radius: 40px;
-    margin-right: 10px;
-  }
-  .main__btn .flyers {
-    font-size: 16px;
-    color: #000;
-    height: 40px;
-    line-height: 40px;
-    width: 40%;
-    background-color: #fff;
-    border-radius: 40px;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-  }
-  .main__caption {
-    margin-left: 5%;
-    padding-top: 0;
-  }
-  .about {
-    background-color: #f79214;
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
-  .about__container {
-    width: 60%;
-    margin: 0 auto;
-    padding: 44px 0;
-    color: #fff;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  .about__video {
-    width: 100%;
-  }
-  .about__content {
-    width: 100%;
-    margin-left: 25px;
-    margin-top: 20px;
-  }
-  .about__content > h2 {
-    font-size: 38px;
-    line-height: 10px;
-    letter-spacing: none;
-  }
-  .about__content > a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 18px;
   }
 }
 /*# sourceMappingURL=style.css.map */
