@@ -5,17 +5,25 @@ Stylesheet: 1080px以上で適用
 ******************************************************************/
 
 $cWhite: #fff;
-  $cBlack: #000;
-  
-  body{
-    margin:0;
-    font-family: "游ゴシック",YuGothic,"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","メイリオ",Meiryo,"ＭＳ Ｐゴシック","MS PGothic",sans-serif;
-  }
+$cBlack: #000;
+
+body{
+  margin:0;
+  font-family: "游ゴシック",YuGothic,"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","メイリオ",Meiryo,"ＭＳ Ｐゴシック","MS PGothic",sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: $cBlack;
+}
+
+.main{
+  margin-top: 0;
+}
   .tablet__header{
     display: none;
   }
+
   .header{
-    max-width: 95%;
+    width: 95%;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -62,4 +70,3 @@ $cWhite: #fff;
       }
     }
   }
-
